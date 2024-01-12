@@ -39,7 +39,7 @@ function fullName(firstName, lastName) {
 //   generateSentence('Kay', 'coffee', 'the local cafe');
 //   => 'Kay was drinking coffee at the local cafe.'
 function generateSentence(person, beverage, location) {
-  return `${person} was drinking ${beverage} at ${location}`
+  return `${person} was drinking ${beverage} at ${location}.`
 }
 
 // Return the given string with all vowels replced with '*' characters.

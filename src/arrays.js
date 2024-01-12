@@ -22,8 +22,8 @@ function bWords(words) {
     if (words[i][0].toUpperCase() === 'B') {
       result.push(words[i])
     }
-    return result
   }
+  return result
 }
 
 // Add all the elements from additionalItems to the end of originalArray.
