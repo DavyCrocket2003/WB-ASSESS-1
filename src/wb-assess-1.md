@@ -2,7 +2,7 @@
 
 > To select an answer for the multiple choice questions, put an `x` inside the square brackets (`[ ]`) like this:
 > ```md
-> - [ ] This is the answer!
+> - [x] This is the answer!
 > ```
 >
 > **Pro tip:** You might find it easier to read the assessment through VS Code's Markdown Preview. To view the preview for this document, open the Command Palette (<kbd>Cmd+Shift-P</kbd> or <kbd>Ctrl+Shift-P</kbd>) and run `Markdown: Open Preview to the Side`.
@@ -17,7 +17,7 @@ Which statement is true about JavaScript?
 - [ ] **B.** JavaScript ignores whitespace characters like spaces and newline characters.
 - [ ] **C.** JavaScript requires you to end all statements with a semicolon (`;`).
 - [ ] **D.** All of the above are true.
-- [ ] **E.** None of the above are true.
+- [x] **E.** None of the above are true.
 
 ### A.2. Turn `sum` to `2`.
 
@@ -33,7 +33,7 @@ answer.
 - [ ] **A.** `sum++`
 - [ ] **B.** `sum += 1`
 - [ ] **C.** `sum = sum + 1`
-- [ ] **D.** All of the above
+- [x] **D.** All of the above
 - [ ] **E.** Some of the above
 
 ### A.3. What's the output?
@@ -45,7 +45,7 @@ const result = 1 < 100 || 'hello' === 'hi';
 console.log(result);
 ```
 
-- [ ] **A.** `true`
+- [x] **A.** `true`
 - [ ] **B.** `false`
 - [ ] **C.** `undefined`
 - [ ] **D.** N/A because the code has an error
@@ -55,16 +55,11 @@ console.log(result);
 What's the output of the program below?
 
 ```js
-const word = '';
-if (word) {
-  console.log('yay!');
-} else {
-  console.log('no :(');
-}
+
 ```
 
 - [ ] **A.** `yay!`
-- [ ] **B.** `no :(`
+- [x] **B.** `no :(`
 - [ ] **C.** An empty line
 - [ ] **D.** N/A because the code has an error
 
@@ -88,7 +83,7 @@ cherry
 ```
 
 - [ ] **A.** `const fruit in fruits`
-- [ ] **B.** `const fruit of fruits`
+- [x] **B.** `const fruit of fruits`
 - [ ] **C.** `let fruit = 0; fruit < fruits.length; fruit++`
 - [ ] **D.** None of the above
 
@@ -106,7 +101,7 @@ function makeWordArray(phrase) {
 - [ ] **A.** Nothing happens because the program errors out.
 - [ ] **B.** It defines a function called `makeWordArray` and converts `phrase` into an array of words.
 - [ ] **C.** It defines a function called `makeWordArray` and outputs a word array.
-- [ ] **D.** It defines a function called `makeWordArray` but nothing else happens.
+- [x] **D.** It defines a function called `makeWordArray` but nothing else happens.
 
 ### A.7. Identify the error
 
@@ -118,7 +113,7 @@ console.log'hi';
 // hi
 ```
 
-- [ ] **A.** The code causes an error because there should be parentheses around `'hi'`.
+- [x] **A.** The code causes an error because there should be parentheses around `'hi'`.
 - [ ] **B.** The code causes an error because `console.log` isn't a function.
 - [ ] **C.** The code causes an error because the code will run but it won't output anything.
 - [ ] **D.** There is no error; the code generates the expected output.
@@ -139,7 +134,7 @@ console.log(fruits[fruits.indexOf('apple')]);
 - [ ] **B.** The code causes an error because `fruits.indexOf('apple')` doesn't return a valid
   index number.
 - [ ] **C.** The code causes an error because it outputs `0` instead of the expected output.
-- [ ] **D.** There is no error; the code generates the expected output.
+- [x] **D.** There is no error; the code generates the expected output.
 
 ### A.9. Identify the error
 
@@ -157,7 +152,7 @@ for (const w of words) {
 ```
 
 - [ ] **A.** The code causes an error because `w` needs to be a `let` variable.
-- [ ] **B.** The code causes an error because `words` is an array and `toUpperCase()` isn't a
+- [x] **B.** The code causes an error because `words` is an array and `toUpperCase()` isn't a
   valid array function.
 - [ ] **C.** The code causes an error because it will output `['JS', 'HTML', 'CSS']` three times.
 - [ ] **D.** There is no error; the code generates the expected output.
@@ -178,7 +173,7 @@ console.log(numStrings);
 ```
 
 - [ ] **A.** The code causes an error because `numStrings` needs to be a `let` variable.
-- [ ] **B.** The code causes an error because `i <= nums.length` should be `i < nums.length`
+- [x] **B.** The code causes an error because `i <= nums.length` should be `i < nums.length`
 - [ ] **C.** The code causes an error because `i++` isn't valid JavaScript syntax.
 - [ ] **D.** There is no error; the code generates the expected output.
 
@@ -210,7 +205,7 @@ outputArgs('hi', 'bye');
   of the expected output.
 - [ ] **C.** The code causes an error because the `a`, `b`, and `c` variables haven't been
   initialized.
-- [ ] **D.** There is no error; the code generates the expected output.
+- [x] **D.** There is no error; the code generates the expected output.
 
 ## B. Free response
 
@@ -220,18 +215,19 @@ outputArgs('hi', 'bye');
 
 ```
 Functions can be used to create named blocks of code that can be executed/reused later. They help you keep code DRY and maintainable.
+There are tasks you will find yourself doing over and over. Instead of using subrutines, we can now package things beautifully as an invocable function. YAY
 ```
 
 **_What is the difference between `console.log` and `return`?_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+console.log() outputs text to a display. return passes a value as the result of an invoked function.
 ```
 
 **_What's the difference between defining and calling a function?_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+Calling a function does whatever the function is designed to do (endless possibilities). In order to call a function it must be defined somewhere. Defining it specifies the behavior that will execute when you invoke the function. However you can define a function and nothing will ever happen until/if it is invoked somewhere.
 ```
 
 ### B.2. Describe these data types.
@@ -241,25 +237,29 @@ Write a short description of the following data types:
 **_String_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+A string is a sequence of characters. It is immutable, iterable, and has a bunch of cool attributes and methods like .toUpperCase() and .length. Seems like the default data type for input, output, and storage/transfer.
+Denoted by double quotes, single quotes, or back tics.
 ```
 
 **_Number_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+As far as I can tell this is a generic term for numerical data types. I think it includes ints, floats and bigInts to name a few. You can do what you would expect with numbers. Most numerial operations are supported natively in js. Very useful data type.
+Denoted in many ways but the most simple is just typing a number in: 2.71828 or 42 etc.
 ```
 
 **_Boolean_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+Booleans are logical data types true and false. They are used for control logic to get your program to operate correctly. There are some tricky "falsy" and "truthy" situations where other data types evaluate to true or false but mostly they come from evaluating comparison operators.
+Boolean literals are typed out: true and false
 ```
 
 **_Array_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+Arrays are simply an indexed list of other objects. Each object in the list has an index to identify it starting at 0 and going to array.length - 1. Arrays can be nested.
+Denoted with []
 ```
 
 ### B.3. Trace the value of `x`
@@ -282,7 +282,7 @@ completed for you.
 
 ```
 Initial values: y = 0, x = 5
-1:              y = 1, x = ??
-2:              y = 2, x = ??
-3:              y = 3, x = ??
+1:              y = 1, x = 10
+2:              y = 2, x = 15
+3:              y = 3, x = 20
 ```
