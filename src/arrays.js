@@ -104,14 +104,28 @@ function smallestNItems(items, n) {
 // Ex.:
 //   findIndex(['a', 'b', 'c', 'a', 'b', 'c'], 'c');
 //   => 2
-function findIndex(items, value) {}
+function findIndex(items, value) {
+  let result = items.indexOf(value)
+  if (result === -1) {
+    return undefined
+  } else {
+    return result
+  }
+
+}
 
 // Given a start number and stop number, return a new array containing all the numbers
 // between the start and stop number.
 // Ex.:
 //   range(1, 5);
 //   => [1, 2, 3, 4, 5]
-function range(start, stop) {}
+function range(start, stop) {
+  let result = []
+  for (let i = start; i <= stop; i ++) {
+    result.push(i)
+  }
+  return result
+}
 
 export {
   bWords,
